@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <title>Leilão</title>
+</head>
+<body>
+    <br><br><br><center>
+    <img src='img/logo_amarelo.png' width='25%'></center>
+    <div class="login-box">
+        <h2>Crie os Jogadores</h2>
+        <form action="leilao.php" method="POST">
+          <div class="user-box">
+            <input type="text" name="gol1" required>
+            <label>Goleiro - ★☆☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="gol2" required>
+            <label>Goleiro - ★★☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="gol3" required>
+            <label>Goleiro - ★★★☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="gol4" required>
+            <label>Goleiro - ★★★★</label>
+          </div>
+          <br><br>
+          <div class="user-box">
+            <input type="text" name="le1" required>
+            <label>Lateral Esquerdo - ★☆☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="le2" required>
+            <label>Lateral Esquerdo - ★★☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="le3" required>
+            <label>Lateral Esquerdo - ★★★☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="le4" required>
+            <label>Lateral Esquerdo - ★★★★</label>
+          </div>
+          <br><br>
+          <div class="user-box">
+            <input type="text" name="ze1" required>
+            <label>Zagueiro (Esquerdo) - ★☆☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="ze2" required>
+            <label>Zagueiro (Esquerdo) - ★★☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="ze3" required>
+            <label>Zagueiro (Esquerdo) - ★★★☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="ze4" required>
+            <label>Zagueiro (Esquerdo) - ★★★★</label>
+          </div>
+          <br><br>
+          <div class="user-box">
+            <input type="text" name="zd1" required>
+            <label>Zagueiro (Direito) - ★☆☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="zd2" required>
+            <label>Zagueiro (Direito) - ★★☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="zd3" required>
+            <label>Zagueiro (Direito) - ★★★☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="zd4" required>
+            <label>Zagueiro (Direito) - ★★★★</label>
+          </div>
+          <br><br>
+          <div class="user-box">
+            <input type="text" name="ld1" required>
+            <label>Lateral Direito - ★☆☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="ld2" required>
+            <label>Lateral Direito - ★★☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="ld3" required>
+            <label>Lateral Direito - ★★★☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="ld4" required>
+            <label>Lateral Direito - ★★★★</label>
+          </div>
+          <br><br>
+          <div class="user-box">
+            <input type="text" name="me1" required>
+            <label>Meio Campo (Esquerdo) - ★☆☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="me2" required>
+            <label>Meio Campo (Esquerdo) - ★★☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="me3" required>
+            <label>Meio Campo (Esquerdo) - ★★★☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="me4" required>
+            <label>Meio Campo (Esquerdo) - ★★★★</label>
+          </div>
+          <br><br>
+          <div class="user-box">
+            <input type="text" name="md1" required>
+            <label>Meio Campo (Direito) - ★☆☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="md2" required>
+            <label>Meio Campo (Direito) - ★★☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="md3" required>
+            <label>Meio Campo (Direto) - ★★★☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="md4" required>
+            <label>Meio Campo (Direito) - ★★★★</label>
+          </div>
+          <br><br>
+          <div class="user-box">
+            <input type="text" name="mc1" required>
+            <label>Meio Campo (Central) - ★☆☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="mc2" required>
+            <label>Meio Campo (Central) - ★★☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="mc3" required>
+            <label>Meio Campo (Central) - ★★★☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="mc4" required>
+            <label>Meio Campo (Central) - ★★★★</label>
+          </div>
+          <br><br>
+          <div class="user-box">
+            <input type="text" name="pe1" required>
+            <label>Ponta Esquerda - ★☆☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="pe2" required>
+            <label>Ponta Esquerda - ★★☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="pe3" required>
+            <label>Ponta Esquerda - ★★★☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="pe4" required>
+            <label>Ponta Esquerda - ★★★★</label>
+          </div>
+          <br><br>
+          <div class="user-box">
+            <input type="text" name="ca1" required>
+            <label>Centroavante - ★☆☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="ca2" required>
+            <label>Centroavante - ★★☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="ca3" required>
+            <label>Centroavante - ★★★☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="ca4" required>
+            <label>Centroavante - ★★★★</label>
+          </div>
+          <br><br>
+          <div class="user-box">
+            <input type="text" name="pd1" required>
+            <label>Ponta Direita - ★☆☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="pd2" required>
+            <label>Ponta Direita - ★★☆☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="pd3" required>
+            <label>Ponta Direita - ★★★☆</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="pd4" required>
+            <label>Ponta Direita - ★★★★</label>
+          </div>
+          <br><br>
+          <button>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Continuar
+          </button>
+        </form>
+      </div>
+      <br><br><br><br>
+</body>
+</html>
+
+<!-- 
+★☆☆☆    Ruim
+★★☆☆    Mediano
+★★★☆    Bom
+★★★★    Ótimo
+-->

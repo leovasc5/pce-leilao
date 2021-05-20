@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/teste.css" rel="stylesheet">
+    <link href="css/alert.css" rel="stylesheet">
+    <link href="css/select.css" rel="stylesheet">
+    <link href="css/number.css" rel="stylesheet">
+    <link href="css/button.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/ico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>Leilão</title>
+</head>
+<body>
+</body>
+</html>
+
+<script>
+    var gol1 = 'Goleiro 1';
+    var gol2 = 'Goleiro 2';
+    var gol3 = 'Goleiro 3';
+    var gol4 = 'Goleiro 4';
+    
+    var le1 = 'Lateral Esquerdo 1';
+    var le2 = 'Lateral Esquerdo 2';
+    var le3 = 'Lateral Esquerdo 3';
+    var le4 = 'Lateral Esquerdo 4';
+
+    var ze1 = 'Zagueiro Esquerdo 1';
+    var ze2 = 'Zagueiro Esquerdo 2';
+    var ze3 = 'Zagueiro Esquerdo 3';
+    var ze4 = 'Zagueiro Esquerdo 4';
+
+    var zd1 = 'Zagueiro Direito 1';
+    var zd2 = 'Zagueiro Direito 2';
+    var zd3 = 'Zagueiro Direito 3';
+    var zd4 = 'Zagueiro Direito 4';
+
+    var ld1 = 'Lateral Direito 1';
+    var ld2 = 'Lateral Direito 2';
+    var ld3 = 'Lateral Direito 3';
+    var ld4 = 'Lateral Direito 4';
+
+    var me1 = 'Meia Esquerdo 1';
+    var me2 = 'Meia Esquerdo 2';
+    var me3 = 'Meia Esquerdo 3';
+    var me4 = 'Meia Esquerdo 4';
+
+    var md1 = 'Meia Direito 1';
+    var md2 = 'Meia Direito 2';
+    var md3 = 'Meia Direito 3';
+    var md4 = 'Meia Direito 4';
+
+    var mc1 = 'Meia Central 1';
+    var mc2 = 'Meia Central 2';
+    var mc3 = 'Meia Central 3';
+    var mc4 = 'Meia Central 4';
+
+    var pe1 = 'Ponta Esquerda 1';
+    var pe2 = 'Ponta Esquerda 2';
+    var pe3 = 'Ponta Esquerda 3';
+    var pe4 = 'Ponta Esquerda 4';
+
+    var ca1 = 'Centroavante 1';
+    var ca2 = 'Centroavante 2';
+    var ca3 = 'Centroavante 3';
+    var ca4 = 'Centroavante 4';
+
+    var pd1 = 'Ponta Direita 1';
+    var pd2 = 'Ponta Direita 2';
+    var pd3 = 'Ponta Direita 3';
+    var pd4 = 'Ponta Direita 4';
+
+    </script>
+    
+    <container class='container'>
+    <div><img src='img/logo.png' id='logo'></div>
+
+    </div>
+    <div class='player' id='player1'>
+        <p><b>Nome: </b>Igor</p>
+        <b> Saldo: </b><label id='saldo_igor'>110</label><br>
+        <b>Gastos: </b><label id='gastos_igor'>0</label>
+    </div>
+    <div class='player' id='player2'>
+        <p><b>Nome: </b>Léo</p>
+        <b>Saldo: </b><label id='saldo_leo'>110</label><br>
+        <b>Gastos: </b><label id='gastos_leo'>0</label>
+    </div>
+    <div class='player' id='player3'>
+        <p><b>Nome: </b>Natan</p>
+        <b>Saldo: </b><label id='saldo_natan'>110</label><br>
+        <b>Gastos: </b><label id='gastos_natan'>0</label>
+    </div>
+    <div class='player' id='player4'>
+        <p><b>Nome: </b>Vitor</p>
+        <b>Saldo: </b><label id='saldo_vitor'>110</label><br>
+        <b>Gastos: </b><label id='gastos_vitor'>0</label>
+    </div>
+    </container>
+    <br><br><br><br><br><br><br>
+   
+    <div class='leilao'>
+        <p id='level4'><b>Estrelas: ★★★★</b></p>
+        <p id='nome_j4'><b>Jogador: </b></p>
+        <input placeholder='Proposta' min='3' id='prop4' type='number'>
+        <button onclick='menos_4()' class='a'>-</button><button onclick='mais_4()' class='b'>+</button><br><br>
+        <div class='select'>
+        <select id='slct_4'>
+            <option disabled selected>Escolha</option>
+            <option>Igor</option>
+            <option>Léo</option>
+            <option>Natan</option>
+            <option>Vitor</option>
+        </select>
+        </div><br>
+        <input class='proposta' type='submit' onclick='leiloar(jogador4.textContent, propj4.value, propv4.value, 4)' value='Leiloar'></input>
+    </div>
+    <div class='leilao'>
+        <p id='level3'><b>Estrelas: ★★★☆</b></p>
+        <p id='nome_j3'><b>Jogador: </b></p>
+        <input placeholder='Proposta' min='3'  id='prop3' type='number'>
+        <button onclick='menos_3()' class='a'>-</button><button onclick='mais_3()' class='b'>+</button><br><br>
+        <div class='select'>
+        <select id='slct_3'>
+            <option disabled selected>Escolha</option>
+            <option>Igor</option>
+            <option>Léo</option>
+            <option>Natan</option>
+            <option>Vitor</option>
+        </select>
+        </div><br>
+        <input class='proposta' type='submit' onclick='leiloar(jogador3.textContent, propj3.value, propv3.value, 3)' value='Leiloar'></input>
+    </div>
+    <div class='leilao'>
+        <p id='level2'><b>Estrelas: ★★☆☆</b></p>
+        <p id='nome_j2'><b>Jogador: </b></p>
+        <input placeholder='Proposta' min='3'  id='prop2' type='number'>
+        <button onclick='menos_2()' class='a'>-</button><button onclick='mais_2()' class='b'>+</button><br><br>
+        <div class='select'>
+        <select id='slct_2'>
+            <option disabled selected>Escolha</option>
+            <option>Igor</option>
+            <option>Léo</option>
+            <option>Natan</option>
+            <option>Vitor</option>
+        </select>
+        </div><br>
+        <input class='proposta' type='submit' onclick='leiloar(jogador2.textContent, propj2.value, propv2.value, 2)' value='Leiloar'></input>
+        
+    </div>
+    <div class='leilao'>
+        <p id='level1'><b>Estrelas: ★☆☆☆</b></p>
+        <p id='nome_j1'><b>Jogador: </b></p>
+        <input placeholder='Proposta' min='3'  id='prop1' type='number'>
+        <button onclick='menos_1()' class='a'>-</button><button onclick='mais_1()' class='b'>+</button><br><br>
+        <div class='select'>
+        <select id='slct_1'>
+            <option disabled selected>Escolha</option>
+            <option>Igor</option>
+            <option>Léo</option>
+            <option>Natan</option>
+            <option>Vitor</option>
+        </select></div><br>
+        <input class='proposta' type='submit' onclick='leiloar(jogador1.textContent, propj1.value, propv1.value, 1)'
+         value='Leiloar'></input>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <center>
+    <input class='botao' type='submit' id='btn' value='Iniciar' onclick='next()' ></input><br>
+    <input class='botao' id='limpar' type='submit' id='btn_limpar' onclick='limpar()' value='Limpar'></input>
+    </center>
+
+<!-- 
+★☆☆☆    Ruim
+★★☆☆    Mediano
+★★★☆    Bom
+★★★★    Ótimo
+-->
+
+    <div class='time'>
+        <h2 class='center'>Time do Vitor</h2>
+        <p id='lista_vitor'></p>
+    </div>
+    <div class='time'>
+        <h2 class='center'>Time do Natan</h2>
+        <p id='lista_natan'></p>
+    </div>
+    <div class='time'>
+        <h2 class='center'>Time do Léo</h2>
+        <p id='lista_leo'></p>
+    </div>
+
+    <div class='time'>
+        <h2 class='center'>Time do Igor</h2>
+        <p id='lista_igor'></p>
+    </div>
+    
+    <br><br><br><br><br><br><br><br><br>
+
+
+<script src='js/teste.js'></script>
+<script src='js/alert.js'></script>
+<script src='js/number.js'></script>
+</body>
+</html>
+
